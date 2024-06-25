@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+    background-color: #f0f4f8;
+}
+.logo{
+    width: 130px;
+    height: 30px;
+    margin: 40px;
+    background-color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 2px 4px 1px #000000;
+
+}
+
+
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 100%;
+    height: 80px;
+    text-align: center; 
+    box-shadow: 5px 2px 4px 5px #00000090;
+    z-index: 1000;
+    
+}
+.navegacao ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 150px;
+    margin-top: 15px;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 19px;
+    
+}
+.navegacao ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.descricao{
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 40px;
+}
+.descricao p{
+    font-size: 19px;
+}
+.persona{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 20px;
+}
+.perfil-img{
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 100px;
+}
+.baixar li {
+    list-style: none;
+    margin-top: 10px;
+    background-color: #ff7777;
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+
+    
+    
+}
+.baixar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 50%;
+    
+}
+.intro-texto{
+    width: 700px;
+    height: 300px;
+    padding: 20px;
+    font-size: 21px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+
+    
+}
+.intro-texto h2 {
+    margin-bottom: 10px;
+}
+.minha-habilidade{
+    display: flex;
+    justify-content: center;
+}
+.habilidades{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 24px;
+    
+}
+.colunas{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #00000090;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+.colunas img{
+width: 80px;
+}
+.titulo-projeto{
+    justify-content: center;
+    display: inline-block;
+    width:100%;
+    margin-top: 40px;
+}
+h3{
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.projetos a img{
+    object-fit: cover;
+}
+.project-box{
+    width: 300px;
+    height: 240px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px;
+    transition: all ease.3s;
+    display: inline-block;
+    
+}
+.project-box:hover{
+    transform: scale(1.1);
+}
+
+.meu-contato{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    background-color: #383838;
+    color: #fff;
+    margin-top: 90px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 2px 4px 2px #00000090;
+
+}
+.contato h3{
+    margin: 10px;
+}
+.icons-c{
+    color: #fff;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #383838;
+    box-shadow: 5px 3px 4px 8px #00000090;
+    
+    }
+.rodape footer p{
+    color: #fff;
+    margin: 30px;
+    font-size: 23px;
+}
+/* Adicione esta seção no seu arquivo estilo.css */
+
+/* Definindo a animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando a animação à classe intro-texto */
+.intro-texto {
+    animation: fadeInUp 1s ease-in-out;
+}

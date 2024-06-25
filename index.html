@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Almeida</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/resposivo.css">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <header  class="navegacao">
+        <span class="logo">Fernando</span>
+        <ul >
+            <li><a href="#minhas-habilidades">Habilidade</a></li>
+            <li><a href="#fernando-home">Home</a></li>
+            <li><a href="#contatos">Contato</a></li>
+        </ul>
+    </header>
+
+    <main class="conteudo" id="fernando-home">
+
+        <div class="persona">
+
+            <div class="descricao">
+                <h1 >Desenvolvedor Front-end</h1>
+                <p>codifico coisas lindamente simples e adoro o que faço.</p>
+                <img class="perfil-img" src="./src/imagens/image_perfil.png" alt="">
+            </div>
+
+            <div class="intro-texto">
+                <h2>Olá, meu nome é Fernando.</h2>
+                <p>Estou à procura de uma oportunidade desafiadora como desenvolvedor front-end, onde eu possa aplicar minha paixão pelo design e desenvolvimento web para criar experiências memoráveis para os usuários. Estou ansioso para colaborar com uma equipe talentosa em um ambiente que promova a inovação e o crescimento profissional!</p>
+            </div>
+
+        </div>
+
+        <div class="habilidades">
+            <h2 id="minhas-habilidades">Minhas Habilidades</h2>
+        </div>
+        <div class="minha-habilidade">
+            <div class="colunas">
+                <img src="./src/imagens/html.png" alt="HTML">
+                <p>Proficiente em HTML, capaz de estruturar conteúdo de forma semântica e acessível para o desenvolvimento web. Contribuo para o sucesso de projetos garantindo bases sólidas para design e funcionalidade das páginas.</p>
+            </div>
+            <div class="colunas">
+                <img src="./src/imagens/css.png" alt="CSS">
+                <p>Expert em CSS, criando layouts responsivos e designs elegantes para páginas da web. Minha proficiência em CSS eleva a qualidade e usabilidade de projetos, resultando em interfaces atrativas e funcionais.</p>
+            </div>
+            <div class="colunas">
+                <img src="./src/imagens/javascript.png" alt="JS">
+                <p>Proficiente em JavaScript, desenvolvendo interações dinâmicas e experiências envolventes para web. Minha experiência capacita-me a criar soluções inovadoras que atendem às necessidades dos usuários e objetivos do projeto.</p>
+            </div>
+        </div>
+
+        <div class="titulo-projeto">
+            <h3>Meus Projetos</h3>
+            <div class="projetos">
+                <a target="_blank" href="https://fernd0-0.github.io/one-piece/"><img src="./src/imagens/projeto-one.png" alt="" class="project-box"></a>
+                
+                <a href="https://fernd0-0.github.io/Calculadora/" target="_blank"><img src="./src/imagens/calculadora-img.jpg" alt="" class="project-box"></a>
+                <a target="_blank" href="https://fernd0-0.github.io/Projeto-Semestral-Contatos/"><img src="./src/imagens/projeto-contato.png" alt="" class="project-box"></a>
+                <a target="_blank" href="https://fernd0-0.github.io/API-POKEMON-CARDS/index.html"><img src="./src/imagens/projeto-pokemon.png" alt="" class="project-box"></a>
+            </div>
+        </div>
+
+        <div class="meu-contato">
+            <div class="contato">
+                <h3 id="contatos">Fale Comigo</h3>
+                <a class="icons-c" href="https://github.com/fernd0-0" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="icons-c" href="https://www.linkedin.com/in/fernando-almeida-71066a181/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="icons-c" href="https://wa.me/+5511961862787" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a class="icons-c" href="https://www.instagram.com/fernd0_?igsh=MXY1bWF3a2ljazU0NQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </main>
+    <div class="rodape">
+        <footer>
+            <p>&copy; Fernando</p>
+        </footer>
+    </div>
+
+    <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const headerOffset = document.querySelector('.navegacao').offsetHeight;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
